@@ -14,14 +14,15 @@ export default function Home() {
 
     return (
         <>
-            <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-                <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                    <h2 className="mt-10 text-cerrnter text-2xl font-bold leading-9 tracking-tight text-white">
+            <div className="flex min-h-dvh flex-1 flex-col justify-center px-6 py-12 lg:px-8 items-center" style={{backgroundImage: "url('/bg.png')"}}>
+                <div className='backdrop-blur-xl bg-white/30 w-fit px-6 py-6 rounded-lg outline outline-2 outline-white/60 -mt-16'>
+                <div className="sm:max-w-sm">
+                    <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-white">
                         Bigscreen Countdown
                     </h2>
                 </div>
 
-                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <div className="mt-6 sm:max-w-sm">
                     <form className="space-y-6" action="#" method="POST">
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium leading-6 text-white">
@@ -64,6 +65,7 @@ export default function Home() {
                             </button>
                         </div>
                     </form>
+                </div>
                 </div>
             </div>
         </>
